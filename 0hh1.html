@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        .mainContainer {
+            margin-top: 10px;
+            display: inline-block;
+            width: 500px;
+        }
+
+        #wrapper h1 {
+            color: white;
+        }
+
+        #wrapper #win {
+            color: lightgreen;
+            text-decoration: solid;
+            font-weight: 900;
+            font-size: 80px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="wrapper" style="text-align:center">
+    <h1 id="heading">Takuzu in JS with HTML5 Canvas</h1>
+    <h1 id="win" style="display: none;">YOU WIN!</h1>
+    <div class="mainContainer">
+        <canvas id="gameCV" width="500" height="500" style="border: 3px solid white"></canvas>
+        <button id="undoBtn" class="btn btn-warning pull-right">Undo</button>
+        <button id="newGameBtn" class="btn btn-primary pull-left">New Game</button>
+    </div>
+</div>
+
+
+<div class="well" style="margin-top:200px">
+    <h3>
+        0-0
+    </h3>
+    <p>
+        <br>isClicked <span id="isClicked">true</span>
+        <br> Color <span id="color"></span>
+        <br> NoThreeSame <span id="threeSame"></span>
+        <br> RowColBal <span id="rowColBal"></span>
+        <br> noDupeColRows <span id="noDupeColRows"></span>
+    </p>
+</div>
+</body>
+
+<script src="game.js"></script>
+</html>
